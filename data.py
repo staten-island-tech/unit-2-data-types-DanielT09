@@ -49,3 +49,19 @@ def factor():
     print(factor)
 
 factor()
+
+def greatestcf(number):
+    x = 1
+    factor = []
+    while x <= number:
+        if number%x == 0:
+            factor.append(x)
+            x += 1
+        else:
+            x += 1
+    return factor
+
+def gcf(x, y):
+    a = greatestcf(x)
+    b = greatestcf(y)
+    print(a, b)
