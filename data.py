@@ -50,18 +50,7 @@ def factor():
             x += 1
     print(factor)
 
-
-
-def greatestcf(number):
-    x = 1
-    factor = []
-    while x <= number:
-        if number%x == 0:
-            factor.append(x)
-            x += 1
-        else:
-            x += 1
-    return factor
+#Number factors
 
 def gcf(x, y):
     a = 1
@@ -86,6 +75,8 @@ def gcf(x, y):
             gcf = factor
     print(gcf)
 
+#GCF of two numbers
+
 def number_guess(x,y):
     history = []
     the_number = random.randint(x,y)
@@ -105,6 +96,6 @@ def number_guess(x,y):
             print(f"{guess} is smaller than the number, try again.")
             history.append(guess)
 
-number_guess(1,10)
+#Number guess game
 
 
